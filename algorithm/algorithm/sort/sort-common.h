@@ -14,7 +14,8 @@
 #include <stdbool.h>
 #include <string.h>
 
-void swap(int *a, int *b);
-void print_nums(int* nums, int numSize, char* name);
+int cmp(int*, int*);
+void swap(int*, int*);
+void print_nums(int*, int, char*);
 
 #endif /* sort_common_h */

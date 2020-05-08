@@ -11,14 +11,14 @@
 
 
 int* selection_sort(int* nums, int numSize) {
-    if (nums == NULL || numSize <= 0) { return nums; }
+    if (nums == NULL || numSize < 2) { return nums; }
     int* list = malloc(sizeof(int) * numSize);
     memset(list, 0, sizeof(int));
     
     for (int end = numSize - 1; end > 0; end--) {
         int maxIndex = 0;
         for (int begin = 1; begin <= end; begin++) {
-            if (nums[begin] > nums[maxIndex]) {
+            if (cmp(&nums[begin], &nums[maxIndex]) > 0) {
                 maxIndex = begin;
             }
         }

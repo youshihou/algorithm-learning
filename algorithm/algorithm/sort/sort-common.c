@@ -8,6 +8,10 @@
 
 #include "sort-common.h"
 
+int cmp(int* a, int* b) {
+    return *a - *b;
+}
+
 void swap(int *a, int *b) {
     int tmp = *a;
     *a = *b;
@@ -19,5 +23,5 @@ void print_nums(int* nums, int numSize, char* name) {
     for (int i = 0; i < numSize; i++) {
         printf("%d_", nums[i]);
     }
-    printf("\n%s end\n\n", name);
+    printf("\n%s end\n", name);
 }

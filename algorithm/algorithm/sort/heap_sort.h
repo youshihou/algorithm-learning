@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int* heap_sort(int* nums, int numSize);
+
 #endif /* heap_sort_h */
