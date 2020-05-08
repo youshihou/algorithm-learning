@@ -9,13 +9,6 @@
 #include "bubble-sort.h"
 #include "sort-common.h"
 
-void swap(int *a, int *b) {
-    int tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-
 int* bubble_sort(int* nums, int numSize) {
     if (nums == NULL || numSize <= 0) { return nums; }
     int* list = malloc(sizeof(int) * numSize);
