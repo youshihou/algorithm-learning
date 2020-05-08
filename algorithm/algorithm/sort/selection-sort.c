@@ -18,7 +18,7 @@ int* selection_sort(int* nums, int numSize) {
     for (int end = numSize - 1; end > 0; end--) {
         int maxIndex = 0;
         for (int begin = 1; begin <= end; begin++) {
-            if (nums[begin] >= nums[maxIndex]) {
+            if (nums[begin] > nums[maxIndex]) {
                 maxIndex = begin;
             }
         }

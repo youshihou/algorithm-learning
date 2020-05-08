@@ -13,3 +13,11 @@ void swap(int *a, int *b) {
     *a = *b;
     *b = tmp;
 }
+
+void print_nums(int* nums, int numSize, char* name) {
+    printf("\n%s start\n", name);
+    for (int i = 0; i < numSize; i++) {
+        printf("%d_", nums[i]);
+    }
+    printf("\n%s end\n\n", name);
+}
