@@ -70,8 +70,8 @@
 		038C11CF246595CA00CB1293 /* sort */ = {
 			isa = PBXGroup;
 			children = (
-				038C11D0246595CA00CB1293 /* bubble-sort.h */,
 				038C11D1246595CA00CB1293 /* sort-common.h */,
+				038C11D0246595CA00CB1293 /* bubble-sort.h */,
 				038C11D2246595CA00CB1293 /* bubble-sort.c */,
 			);
 			path = sort;

@@ -9,5 +9,9 @@
 #ifndef sort_common_h
 #define sort_common_h
 
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
 
 #endif /* sort_common_h */

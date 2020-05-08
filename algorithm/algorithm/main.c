@@ -7,9 +7,17 @@
 //
 
 #include <stdio.h>
+#include "bubble-sort.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(int argc, const char * argv[]) {    
+    int nums[] = {56, 9, 10, 19, 28, 37, 34};
+    int numSize = 7;
+    
+    bubble_sort(nums, numSize);
+    for (int i = 0; i < numSize; i++) {
+        printf("%d_", nums[i]);
+    }
+    printf("\n\n\n");
+    
     return 0;
 }
