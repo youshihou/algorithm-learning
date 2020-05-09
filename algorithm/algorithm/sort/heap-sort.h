@@ -1,5 +1,5 @@
 //
-//  heap_sort.h
+//  heap-sort.h
 //  algorithm
 //
 //  Created by Ankui on 5/8/20.

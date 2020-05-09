@@ -1,12 +1,12 @@
 //
-//  heap_sort.c
+//  heap-sort.c
 //  algorithm
 //
 //  Created by Ankui on 5/8/20.
 //  Copyright © 2020 Ankui. All rights reserved.
 //
 
-#include "heap_sort.h"
+#include "heap-sort.h"
 #include "sort-common.h"
 
 void sift_down(int* nums, int numSize, int index) {
