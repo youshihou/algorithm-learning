@@ -15,8 +15,8 @@
 
 
 int main(int argc, const char * argv[]) {    
-    int nums[] = {56, 9, 10, 19, 28, 37, 34};
-    int numSize = 7;
+    int nums[] = {56, 9, 10, 19, 28, 37, 34, 111, 2, 55};
+    int numSize = 10;
     
     bubble_sort(nums, numSize);
     print_nums(nums, numSize, "bubble_sort");
