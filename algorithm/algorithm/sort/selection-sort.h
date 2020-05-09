@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-int* selection_sort(int* nums, int numSize);
+int* selection_sort(int*, int);
 
 #endif /* selection_sort_h */

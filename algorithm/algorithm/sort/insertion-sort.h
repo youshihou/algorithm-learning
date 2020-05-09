@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void insertion_sort(int* nums, int numsSize);
+
 #endif /* insertion_sort_h */

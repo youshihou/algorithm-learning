@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-int* bubble_sort(int* nums, int numSize);
+int* bubble_sort(int*, int);
 
 #endif /* bubble_sort_h */

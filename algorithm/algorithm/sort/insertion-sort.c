@@ -7,3 +7,10 @@
 //
 
 #include "insertion-sort.h"
+#include "sort-common.h"
+
+void insertion_sort(int* nums, int numsSize) {
+    if (nums == NULL || numsSize < 2) { return; }
+
+    
+}
