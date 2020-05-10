@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031552E82467B67E001C70B1 /* binary-search.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552E72467B67E001C70B1 /* binary-search.c */; };
 		032936152467024D001314A6 /* insertion-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 032936142467024D001314A6 /* insertion-sort.c */; };
 		038C11C9246595B800CB1293 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11C8246595B800CB1293 /* main.c */; };
 		038C11D3246595CA00CB1293 /* bubble-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D2246595CA00CB1293 /* bubble-sort.c */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031552E62467B67E001C70B1 /* binary-search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "binary-search.h"; sourceTree = "<group>"; };
+		031552E72467B67E001C70B1 /* binary-search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "binary-search.c"; sourceTree = "<group>"; };
 		032936132467024D001314A6 /* insertion-sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "insertion-sort.h"; sourceTree = "<group>"; };
 		032936142467024D001314A6 /* insertion-sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "insertion-sort.c"; sourceTree = "<group>"; };
 		038C11C5246595B800CB1293 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,8 @@
 				038C11DB2465AE6400CB1293 /* heap-sort.c */,
 				032936132467024D001314A6 /* insertion-sort.h */,
 				032936142467024D001314A6 /* insertion-sort.c */,
+				031552E62467B67E001C70B1 /* binary-search.h */,
+				031552E72467B67E001C70B1 /* binary-search.c */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038C11D92465A48200CB1293 /* sort-common.c in Sources */,
+				031552E82467B67E001C70B1 /* binary-search.c in Sources */,
 				032936152467024D001314A6 /* insertion-sort.c in Sources */,
 				038C11C9246595B800CB1293 /* main.c in Sources */,
 				038C11DC2465AE6400CB1293 /* heap-sort.c in Sources */,

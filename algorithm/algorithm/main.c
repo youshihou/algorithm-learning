@@ -12,7 +12,7 @@
 #include "selection-sort.h"
 #include "heap-sort.h"
 #include "insertion-sort.h"
-
+#include "binary-search.h"
 
 int main(int argc, const char * argv[]) {    
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -33,6 +33,9 @@ int main(int argc, const char * argv[]) {
     print_nums(nums, numsSize, "insertion_sort start");
     insertion_sort(nums, numsSize);
     print_nums(nums, numsSize, "insertion_sort end");
+    
+    int idx = index_of(nums, numsSize, 56);
+    printf("%d\n", idx);
     
     return 0;
 }
