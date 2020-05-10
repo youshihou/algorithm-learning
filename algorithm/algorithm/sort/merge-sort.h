@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void merge_sort(int*, int);
+
 #endif /* merge_sort_h */

@@ -13,6 +13,7 @@
 #include "heap-sort.h"
 #include "insertion-sort.h"
 #include "binary-search.h"
+#include "merge-sort.h"
 
 int main(int argc, const char * argv[]) {    
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -30,13 +31,18 @@ int main(int argc, const char * argv[]) {
 //    heap_sort(nums, numsSize);
 //    print_nums(nums, numsSize, "heap_sort end");
     
-    print_nums(nums, numsSize, "insertion_sort start");
-    insertion_sort(nums, numsSize);
-    print_nums(nums, numsSize, "insertion_sort end");
+//    print_nums(nums, numsSize, "insertion_sort start");
+//    insertion_sort(nums, numsSize);
+//    print_nums(nums, numsSize, "insertion_sort end");
     
 //    int idx = index_of(nums, numsSize, 56);
 //    int idx = search(nums, numsSize, 22);
 //    printf("%d\n", idx);
+    
+    print_nums(nums, numsSize, "merge_sort start");
+    merge_sort(nums, numsSize);
+    print_nums(nums, numsSize, "merge_sort end");
+
     
     return 0;
 }
