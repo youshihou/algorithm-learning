@@ -35,8 +35,8 @@ int main(int argc, const char * argv[]) {
     print_nums(nums, numsSize, "insertion_sort end");
     
 //    int idx = index_of(nums, numsSize, 56);
-    int idx = search(nums, numsSize, 22);
-    printf("%d\n", idx);
+//    int idx = search(nums, numsSize, 22);
+//    printf("%d\n", idx);
     
     return 0;
 }
