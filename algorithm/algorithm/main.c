@@ -18,17 +18,17 @@ int main(int argc, const char * argv[]) {
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
     int numsSize = 7;
     
-    print_nums(nums, numsSize, "bubble_sort start");
-    bubble_sort(nums, numsSize);
-    print_nums(nums, numsSize, "bubble_sort end");
-    
-    print_nums(nums, numsSize, "selection_sort start");
-    selection_sort(nums, numsSize);
-    print_nums(nums, numsSize, "selection_sort start");
-
-    print_nums(nums, numsSize, "heap_sort start");
-    heap_sort(nums, numsSize);
-    print_nums(nums, numsSize, "heap_sort end");
+//    print_nums(nums, numsSize, "bubble_sort start");
+//    bubble_sort(nums, numsSize);
+//    print_nums(nums, numsSize, "bubble_sort end");
+//    
+//    print_nums(nums, numsSize, "selection_sort start");
+//    selection_sort(nums, numsSize);
+//    print_nums(nums, numsSize, "selection_sort start");
+//
+//    print_nums(nums, numsSize, "heap_sort start");
+//    heap_sort(nums, numsSize);
+//    print_nums(nums, numsSize, "heap_sort end");
     
     print_nums(nums, numsSize, "insertion_sort start");
     insertion_sort(nums, numsSize);
