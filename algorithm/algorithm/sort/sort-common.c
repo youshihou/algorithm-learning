@@ -19,9 +19,9 @@ void swap(int *a, int *b) {
 }
 
 void print_nums(int* nums, int numSize, char* name) {
-    printf("\n%s start\n", name);
+    printf("%s\n", name);
     for (int i = 0; i < numSize; i++) {
         printf("%d_", nums[i]);
     }
-    printf("\n%s end\n", name);
+    printf("\n\n");
 }
