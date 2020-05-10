@@ -9,6 +9,26 @@
 #include "binary-search.h"
 #include "sort-common.h"
 
+
+int search(int* nums, int numsSize, int num) {
+    if (nums == NULL || numsSize <= 0) { return -1; }
+    
+    int begin = 0;
+    int end = numsSize;
+    while (begin < end) {
+        int mid = (begin + end) >> 1;
+        if (num < nums[mid]) {
+            end = mid;
+        } else {
+            begin = mid + 1;
+        }
+    }
+    
+    return end;
+}
+
+
+
 int index_of(int *nums, int numsSize, int num) {
     if (nums == NULL || numsSize <= 0) { return -1; }
     

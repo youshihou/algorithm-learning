@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+int search(int*, int, int);
 int index_of(int *, int, int);
 
 #endif /* binary_search_h */
