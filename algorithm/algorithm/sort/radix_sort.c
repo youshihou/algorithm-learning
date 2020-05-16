@@ -46,3 +46,36 @@ void radix_sort(int nums[], int size) {
         counting_sort_(nums, size, divider);
     }
 }
+
+
+
+
+void radix_sort1(int nums[], int size) {
+    if (nums == NULL || size <= 0) { return; }
+    
+    int max = nums[0];
+    for (int i = 0; i < size; i++) {
+        if (nums[i] > max) {
+            max = nums[i];
+        }
+    }
+    
+    int buckets[10][size];
+    int bucketSizes[10] = {0}; // MUST!!! initialize
+    
+    for (int divider = 1; divider <= max; divider *= 10) {
+        for (int i = 0; i < size; i++) {
+            int idx = nums[i] / divider % 10;
+            buckets[idx][bucketSizes[idx]++] = nums[i];
+        }
+        
+        int idx = 0;
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < bucketSizes[i]; j++) {
+                nums[idx++] = buckets[i][j];
+            }
+            bucketSizes[i] = 0;
+        }
+    }
+    
+}
