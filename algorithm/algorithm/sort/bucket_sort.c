@@ -11,5 +11,8 @@
 
 
 void bucket_sort(int nums[], int size) {
+    if (nums == NULL || size <= 0) { return; }
+    
+    // TODO: -
     
 }
