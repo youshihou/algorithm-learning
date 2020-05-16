@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void radix_sort(int*, int);
+
 #endif /* radix_sort_h */
