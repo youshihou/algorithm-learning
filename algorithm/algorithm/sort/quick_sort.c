@@ -11,6 +11,10 @@
 
 
 int pivot_index(int* nums, int begin, int end) {
+    // random a pivot idx
+    int idx = rand() % (end - begin);
+    swap(&nums[begin], &nums[idx]);
+    
     int pivot = nums[begin];
     end--;
     
@@ -18,7 +22,7 @@ int pivot_index(int* nums, int begin, int end) {
         
         // right --> left
         while (begin < end) {
-            if (pivot < nums[end]) {
+            if (pivot < nums[end]) { // CARE!!! is < not <=, otherwise, the cutting is uneven
                 end--;
             } else {
                 nums[begin++] = nums[end];
@@ -28,7 +32,7 @@ int pivot_index(int* nums, int begin, int end) {
         
         // left --> right
         while (begin < end) {
-            if (pivot > nums[begin]) {
+            if (pivot > nums[begin]) { // CARE!!! is > not >=, otherwise, the cutting is uneven
                 begin++;
             } else {
                 nums[end--] = nums[begin];
