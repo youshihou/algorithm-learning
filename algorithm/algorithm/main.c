@@ -18,6 +18,7 @@
 #include "shell_sort.h"
 #include "counting_sort.h"
 #include "radix_sort.h"
+#include "bucket_sort.h"
 
 int main(int argc, const char * argv[]) {    
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -59,10 +60,13 @@ int main(int argc, const char * argv[]) {
 //    counting_sort(nums, size);
 //    print_nums(nums, size, "counting_sort end");
   
-    print_nums(nums, size, "radix_sort start");
-    radix_sort(nums, size);
-    print_nums(nums, size, "radix_sort end");
+//    print_nums(nums, size, "radix_sort start");
+//    radix_sort(nums, size);
+//    print_nums(nums, size, "radix_sort end");
 
+    print_nums(nums, size, "bucket_sort start");
+    bucket_sort(nums, size);
+    print_nums(nums, size, "bucket_sort end");
     
     return 0;
 }

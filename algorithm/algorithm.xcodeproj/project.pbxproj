@@ -14,6 +14,7 @@
 		035D2202246FE9790020BF33 /* shell_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D2201246FE9790020BF33 /* shell_sort.c */; };
 		035D220524700A950020BF33 /* counting_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D220424700A950020BF33 /* counting_sort.c */; };
 		035D22092470202A0020BF33 /* radix_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D22082470202A0020BF33 /* radix_sort.c */; };
+		035D220C24702BB30020BF33 /* bucket_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D220B24702BB30020BF33 /* bucket_sort.c */; };
 		038C11C9246595B800CB1293 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11C8246595B800CB1293 /* main.c */; };
 		038C11D3246595CA00CB1293 /* bubble-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D2246595CA00CB1293 /* bubble-sort.c */; };
 		038C11D62465A43C00CB1293 /* selection-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D52465A43C00CB1293 /* selection-sort.c */; };
@@ -48,6 +49,8 @@
 		035D220424700A950020BF33 /* counting_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = counting_sort.c; sourceTree = "<group>"; };
 		035D22072470202A0020BF33 /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
 		035D22082470202A0020BF33 /* radix_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = radix_sort.c; sourceTree = "<group>"; };
+		035D220A24702BB30020BF33 /* bucket_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bucket_sort.h; sourceTree = "<group>"; };
+		035D220B24702BB30020BF33 /* bucket_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bucket_sort.c; sourceTree = "<group>"; };
 		038C11C5246595B800CB1293 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		038C11C8246595B800CB1293 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		038C11D0246595CA00CB1293 /* bubble-sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bubble-sort.h"; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				035D220424700A950020BF33 /* counting_sort.c */,
 				035D22072470202A0020BF33 /* radix_sort.h */,
 				035D22082470202A0020BF33 /* radix_sort.c */,
+				035D220A24702BB30020BF33 /* bucket_sort.h */,
+				035D220B24702BB30020BF33 /* bucket_sort.c */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				035D2202246FE9790020BF33 /* shell_sort.c in Sources */,
 				038C11D92465A48200CB1293 /* sort-common.c in Sources */,
 				035D21FF246FD7CC0020BF33 /* quick_sort.c in Sources */,
+				035D220C24702BB30020BF33 /* bucket_sort.c in Sources */,
 				031552E82467B67E001C70B1 /* binary-search.c in Sources */,
 				035D22092470202A0020BF33 /* radix_sort.c in Sources */,
 				031552EB2467E526001C70B1 /* merge-sort.c in Sources */,

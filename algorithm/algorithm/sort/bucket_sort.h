@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void bucket_sort(int*, int);
+
 #endif /* bucket_sort_h */
