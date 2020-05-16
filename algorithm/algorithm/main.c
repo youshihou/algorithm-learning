@@ -14,34 +14,39 @@
 #include "insertion-sort.h"
 #include "binary-search.h"
 #include "merge-sort.h"
+#include "quick_sort.h"
 
 int main(int argc, const char * argv[]) {    
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
-    int numsSize = 7;
+    int size = 7;
     
-//    print_nums(nums, numsSize, "bubble_sort start");
-//    bubble_sort(nums, numsSize);
-//    print_nums(nums, numsSize, "bubble_sort end");
+//    print_nums(nums, size, "bubble_sort start");
+//    bubble_sort(nums, size);
+//    print_nums(nums, size, "bubble_sort end");
 //    
-//    print_nums(nums, numsSize, "selection_sort start");
-//    selection_sort(nums, numsSize);
-//    print_nums(nums, numsSize, "selection_sort start");
+//    print_nums(nums, size, "selection_sort start");
+//    selection_sort(nums, size);
+//    print_nums(nums, size, "selection_sort start");
 //
-//    print_nums(nums, numsSize, "heap_sort start");
-//    heap_sort(nums, numsSize);
-//    print_nums(nums, numsSize, "heap_sort end");
+//    print_nums(nums, size, "heap_sort start");
+//    heap_sort(nums, size);
+//    print_nums(nums, size, "heap_sort end");
     
-//    print_nums(nums, numsSize, "insertion_sort start");
-//    insertion_sort(nums, numsSize);
-//    print_nums(nums, numsSize, "insertion_sort end");
+//    print_nums(nums, size, "insertion_sort start");
+//    insertion_sort(nums, size);
+//    print_nums(nums, size, "insertion_sort end");
     
-//    int idx = index_of(nums, numsSize, 56);
-//    int idx = search(nums, numsSize, 22);
+//    int idx = index_of(nums, size, 56);
+//    int idx = search(nums, size, 22);
 //    printf("%d\n", idx);
     
-    print_nums(nums, numsSize, "merge_sort start");
-    merge_sort(nums, numsSize);
-    print_nums(nums, numsSize, "merge_sort end");
+//    print_nums(nums, size, "merge_sort start");
+//    merge_sort(nums, size);
+//    print_nums(nums, size, "merge_sort end");
+
+    print_nums(nums, size, "quick_sort start");
+    quick_sort(nums, size);
+    print_nums(nums, size, "quick_sort end");
 
     
     return 0;

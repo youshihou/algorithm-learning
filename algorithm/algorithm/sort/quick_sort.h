@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void quick_sort(int*, int);
+
 #endif /* quick_sort_h */
