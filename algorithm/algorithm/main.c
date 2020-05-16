@@ -15,6 +15,7 @@
 #include "binary-search.h"
 #include "merge-sort.h"
 #include "quick_sort.h"
+#include "shell_sort.h"
 
 int main(int argc, const char * argv[]) {    
     int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -44,10 +45,13 @@ int main(int argc, const char * argv[]) {
 //    merge_sort(nums, size);
 //    print_nums(nums, size, "merge_sort end");
 
-    print_nums(nums, size, "quick_sort start");
-    quick_sort(nums, size);
-    print_nums(nums, size, "quick_sort end");
+//    print_nums(nums, size, "quick_sort start");
+//    quick_sort(nums, size);
+//    print_nums(nums, size, "quick_sort end");
 
+    print_nums(nums, size, "shell_sort start");
+    shell_sort(nums, size);
+    print_nums(nums, size, "shell_sort end");
     
     return 0;
 }

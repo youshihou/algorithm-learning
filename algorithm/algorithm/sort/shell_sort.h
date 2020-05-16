@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void shell_sort(int*, int);
+
 #endif /* shell_sort_h */
