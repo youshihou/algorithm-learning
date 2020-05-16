@@ -12,6 +12,7 @@
 		032936152467024D001314A6 /* insertion-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 032936142467024D001314A6 /* insertion-sort.c */; };
 		035D21FF246FD7CC0020BF33 /* quick_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D21FE246FD7CC0020BF33 /* quick_sort.c */; };
 		035D2202246FE9790020BF33 /* shell_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D2201246FE9790020BF33 /* shell_sort.c */; };
+		035D220524700A950020BF33 /* counting_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D220424700A950020BF33 /* counting_sort.c */; };
 		038C11C9246595B800CB1293 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11C8246595B800CB1293 /* main.c */; };
 		038C11D3246595CA00CB1293 /* bubble-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D2246595CA00CB1293 /* bubble-sort.c */; };
 		038C11D62465A43C00CB1293 /* selection-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D52465A43C00CB1293 /* selection-sort.c */; };
@@ -42,6 +43,8 @@
 		035D21FE246FD7CC0020BF33 /* quick_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_sort.c; sourceTree = "<group>"; };
 		035D2200246FE9790020BF33 /* shell_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shell_sort.h; sourceTree = "<group>"; };
 		035D2201246FE9790020BF33 /* shell_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shell_sort.c; sourceTree = "<group>"; };
+		035D220324700A950020BF33 /* counting_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = counting_sort.h; sourceTree = "<group>"; };
+		035D220424700A950020BF33 /* counting_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = counting_sort.c; sourceTree = "<group>"; };
 		038C11C5246595B800CB1293 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		038C11C8246595B800CB1293 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		038C11D0246595CA00CB1293 /* bubble-sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bubble-sort.h"; sourceTree = "<group>"; };
@@ -65,6 +68,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035D220624700FE00020BF33 /* cmp */ = {
+			isa = PBXGroup;
+			children = (
+				038C11D0246595CA00CB1293 /* bubble-sort.h */,
+				038C11D2246595CA00CB1293 /* bubble-sort.c */,
+				038C11D42465A43C00CB1293 /* selection-sort.h */,
+				038C11D52465A43C00CB1293 /* selection-sort.c */,
+				038C11DA2465AE6400CB1293 /* heap-sort.h */,
+				038C11DB2465AE6400CB1293 /* heap-sort.c */,
+				032936132467024D001314A6 /* insertion-sort.h */,
+				032936142467024D001314A6 /* insertion-sort.c */,
+				031552E62467B67E001C70B1 /* binary-search.h */,
+				031552E72467B67E001C70B1 /* binary-search.c */,
+				031552E92467E526001C70B1 /* merge-sort.h */,
+				031552EA2467E526001C70B1 /* merge-sort.c */,
+				035D21FD246FD7CC0020BF33 /* quick_sort.h */,
+				035D21FE246FD7CC0020BF33 /* quick_sort.c */,
+				035D2200246FE9790020BF33 /* shell_sort.h */,
+				035D2201246FE9790020BF33 /* shell_sort.c */,
+			);
+			path = cmp;
+			sourceTree = "<group>";
+		};
 		038C11BC246595B800CB1293 = {
 			isa = PBXGroup;
 			children = (
@@ -95,22 +121,9 @@
 			children = (
 				038C11D72465A48200CB1293 /* sort-common.h */,
 				038C11D82465A48200CB1293 /* sort-common.c */,
-				038C11D0246595CA00CB1293 /* bubble-sort.h */,
-				038C11D2246595CA00CB1293 /* bubble-sort.c */,
-				038C11D42465A43C00CB1293 /* selection-sort.h */,
-				038C11D52465A43C00CB1293 /* selection-sort.c */,
-				038C11DA2465AE6400CB1293 /* heap-sort.h */,
-				038C11DB2465AE6400CB1293 /* heap-sort.c */,
-				032936132467024D001314A6 /* insertion-sort.h */,
-				032936142467024D001314A6 /* insertion-sort.c */,
-				031552E62467B67E001C70B1 /* binary-search.h */,
-				031552E72467B67E001C70B1 /* binary-search.c */,
-				031552E92467E526001C70B1 /* merge-sort.h */,
-				031552EA2467E526001C70B1 /* merge-sort.c */,
-				035D21FD246FD7CC0020BF33 /* quick_sort.h */,
-				035D21FE246FD7CC0020BF33 /* quick_sort.c */,
-				035D2200246FE9790020BF33 /* shell_sort.h */,
-				035D2201246FE9790020BF33 /* shell_sort.c */,
+				035D220624700FE00020BF33 /* cmp */,
+				035D220324700A950020BF33 /* counting_sort.h */,
+				035D220424700A950020BF33 /* counting_sort.c */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 				031552EB2467E526001C70B1 /* merge-sort.c in Sources */,
 				032936152467024D001314A6 /* insertion-sort.c in Sources */,
 				038C11C9246595B800CB1293 /* main.c in Sources */,
+				035D220524700A950020BF33 /* counting_sort.c in Sources */,
 				038C11DC2465AE6400CB1293 /* heap-sort.c in Sources */,
 				038C11D3246595CA00CB1293 /* bubble-sort.c in Sources */,
 				038C11D62465A43C00CB1293 /* selection-sort.c in Sources */,

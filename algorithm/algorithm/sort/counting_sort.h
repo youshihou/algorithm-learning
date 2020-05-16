@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void counting_sort(int*, int);
+
 #endif /* counting_sort_h */

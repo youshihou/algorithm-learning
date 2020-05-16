@@ -7,3 +7,9 @@
 //
 
 #include "counting_sort.h"
+#include "sort-common.h"
+
+
+void counting_sort(int nums[], int size) {
+    
+}
