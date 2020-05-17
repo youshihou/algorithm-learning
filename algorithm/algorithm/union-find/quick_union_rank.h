@@ -11,5 +11,10 @@
 
 #include "union-find-common.h"
 
+void quick_union_rank_create(int*, int, int*);
+void quick_union_rank_union(int*, int, int*, int, int);
+int quick_union_rank_find(int*, int, int);
+bool quick_union_rank_is_same(int*, int, int, int);
+
 
 #endif /* quick_union_rank_h */
