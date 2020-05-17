@@ -26,6 +26,7 @@
 #include "quick_union_rank.h"
 #include "quick_union_rank_path_compression.h"
 #include "quick_union_rank_path_spliting.h"
+#include "quick_union_rank_path_halving.h"
 
 int main(int argc, const char * argv[]) {    
 //    int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -204,26 +205,47 @@ int main(int argc, const char * argv[]) {
     }
 
     {
-        int ranks[12];
-        quick_union_rank_path_spliting_create(parents, 12, ranks);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 1);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 3);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 4);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 3);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 5);
-
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 6, 7);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 8, 10);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 10);
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 11);
-
-        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 6));
-        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 5));
-        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
-        quick_union_rank_path_spliting_union(parents, 12, ranks, 4, 6);
-        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
+//        int ranks[12];
+//        quick_union_rank_path_spliting_create(parents, 12, ranks);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 1);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 3);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 4);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 3);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 5);
+//
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 6, 7);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 8, 10);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 10);
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 11);
+//
+//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 6));
+//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 5));
+//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
+//        quick_union_rank_path_spliting_union(parents, 12, ranks, 4, 6);
+//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
     }
 
+    {
+        int ranks[12];
+        quick_union_rank_path_halving_create(parents, 12, ranks);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 1);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 3);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 4);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 3);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 5);
+
+        quick_union_rank_path_halving_union(parents, 12, ranks, 6, 7);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 8, 10);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 10);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 11);
+
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+        quick_union_rank_path_halving_union(parents, 12, ranks, 4, 6);
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+    }
+    
     
     return 0;
 }
