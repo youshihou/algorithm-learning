@@ -9,6 +9,25 @@
 #ifndef search_h
 #define search_h
 
-#include <stdio.h>
+#include "graph-common.h"
 
+struct node {
+    int parent;
+    int* neighbors;
+};
+
+struct _graph {
+    size_t vertices;
+    struct node* list;
+};
+
+struct _graph* make_sample_graph(size_t);
+void destroy_(struct _graph*);
+void print_graph(const struct _graph*);
+void print_path(const struct _graph*, int);
+void print_tree(const struct _graph*);
+void dfs(struct _graph*, int);
+void bfs(struct _graph*, int);
+    
+    
 #endif /* search_h */

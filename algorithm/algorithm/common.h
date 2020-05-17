@@ -14,5 +14,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include <assert.h>
+#include <stdint.h>
 
 #endif /* common_h */

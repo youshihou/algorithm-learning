@@ -33,225 +33,231 @@ static void match_sink(struct graph* g, int source, int sink, void* data) {
     assert(data && sink == *((int*)data));
 }
 
-int main(int argc, const char * argv[]) {    
-//    int nums[] = {56, 9, 10, 28, 37, 111, 2};
-//    int size = 7;
+#include "search.h"
+
+int main(int argc, const char * argv[]) {
     
+#if 0
+    int nums[] = {56, 9, 10, 28, 37, 111, 2};
+    int size = 7;
     {
-//        print_nums(nums, size, "bubble_sort start");
-//        bubble_sort(nums, size);
-//        print_nums(nums, size, "bubble_sort end");
+        print_nums(nums, size, "bubble_sort start");
+        bubble_sort(nums, size);
+        print_nums(nums, size, "bubble_sort end");
     }
     
     {
-//        print_nums(nums, size, "selection_sort start");
-//        selection_sort(nums, size);
-//        print_nums(nums, size, "selection_sort start");
+        print_nums(nums, size, "selection_sort start");
+        selection_sort(nums, size);
+        print_nums(nums, size, "selection_sort start");
     }
 
     {
-//        print_nums(nums, size, "heap_sort start");
-//        heap_sort(nums, size);
-//        print_nums(nums, size, "heap_sort end");
+        print_nums(nums, size, "heap_sort start");
+        heap_sort(nums, size);
+        print_nums(nums, size, "heap_sort end");
     }
     
     {
-//        print_nums(nums, size, "insertion_sort start");
-//        insertion_sort(nums, size);
-//        print_nums(nums, size, "insertion_sort end");
+        print_nums(nums, size, "insertion_sort start");
+        insertion_sort(nums, size);
+        print_nums(nums, size, "insertion_sort end");
     }
     
     {
-//        int idx = index_of(nums, size, 56);
-//        int idx = search(nums, size, 22);
-//        printf("%d\n", idx);
+        int idx = index_of(nums, size, 56);
+        idx = search(nums, size, 22);
+        printf("%d\n", idx);
     }
     
     {
-//        print_nums(nums, size, "merge_sort start");
-//        merge_sort(nums, size);
-//        print_nums(nums, size, "merge_sort end");
+        print_nums(nums, size, "merge_sort start");
+        merge_sort(nums, size);
+        print_nums(nums, size, "merge_sort end");
     }
 
     {
-//        print_nums(nums, size, "quick_sort start");
-//        quick_sort(nums, size);
-//        print_nums(nums, size, "quick_sort end");
+        print_nums(nums, size, "quick_sort start");
+        quick_sort(nums, size);
+        print_nums(nums, size, "quick_sort end");
     }
 
     {
-//        print_nums(nums, size, "shell_sort start");
-//        shell_sort(nums, size);
-//        print_nums(nums, size, "shell_sort end");
+        print_nums(nums, size, "shell_sort start");
+        shell_sort(nums, size);
+        print_nums(nums, size, "shell_sort end");
     }
     
     {
-//        print_nums(nums, size, "counting_sort start");
-//        counting_sort(nums, size);
-//        print_nums(nums, size, "counting_sort end");
+        print_nums(nums, size, "counting_sort start");
+        counting_sort(nums, size);
+        print_nums(nums, size, "counting_sort end");
     }
     
     {
-//        print_nums(nums, size, "radix_sort start");
-//        radix_sort(nums, size);
-//        print_nums(nums, size, "radix_sort end");
+        print_nums(nums, size, "radix_sort start");
+        radix_sort(nums, size);
+        print_nums(nums, size, "radix_sort end");
     }
 
     {
-//        print_nums(nums, size, "bucket_sort start");
-//        bucket_sort(nums, size);
-//        print_nums(nums, size, "bucket_sort end");
+        print_nums(nums, size, "bucket_sort start");
+        bucket_sort(nums, size);
+        print_nums(nums, size, "bucket_sort end");
     }
+#endif
     
     
-//    int parents[12];
-    
+#if 0
+    int parents[12];
     {
-//        quick_find_create(parents, 12);
-//        quick_find_union(parents, 12, 0, 1);
-//        quick_find_union(parents, 12, 0, 3);
-//        quick_find_union(parents, 12, 0, 4);
-//        quick_find_union(parents, 12, 2, 3);
-//        quick_find_union(parents, 12, 2, 5);
-//
-//        quick_find_union(parents, 12, 6, 7);
-//        quick_find_union(parents, 12, 8, 10);
-//        quick_find_union(parents, 12, 9, 10);
-//        quick_find_union(parents, 12, 9, 11);
-//
-//        printf("%d\n", quick_find_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_find_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
-//        quick_find_union(parents, 12, 4, 6);
-//        printf("%d\n", quick_find_is_same(parents, 12, 2, 7));
-    }
-    
-    {
-//        quick_union_create(parents, 12);
-//        quick_union_union(parents, 12, 0, 1);
-//        quick_union_union(parents, 12, 0, 3);
-//        quick_union_union(parents, 12, 0, 4);
-//        quick_union_union(parents, 12, 2, 3);
-//        quick_union_union(parents, 12, 2, 5);
-//
-//        quick_union_union(parents, 12, 6, 7);
-//        quick_union_union(parents, 12, 8, 10);
-//        quick_union_union(parents, 12, 9, 10);
-//        quick_union_union(parents, 12, 9, 11);
-//
-//        printf("%d\n", quick_union_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
-//        quick_union_union(parents, 12, 4, 6);
-//        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
-    }
-    
-    {
-//        int sizes[12];
-//        quick_union_size_create(parents, 12, sizes);
-//        quick_union_size_union(parents, 12, sizes, 0, 1);
-//        quick_union_size_union(parents, 12, sizes, 0, 3);
-//        quick_union_size_union(parents, 12, sizes, 0, 4);
-//        quick_union_size_union(parents, 12, sizes, 2, 3);
-//        quick_union_size_union(parents, 12, sizes, 2, 5);
-//
-//        quick_union_size_union(parents, 12, sizes, 6, 7);
-//        quick_union_size_union(parents, 12, sizes, 8, 10);
-//        quick_union_size_union(parents, 12, sizes, 9, 10);
-//        quick_union_size_union(parents, 12, sizes, 9, 11);
+        quick_find_create(parents, 12);
+        quick_find_union(parents, 12, 0, 1);
+        quick_find_union(parents, 12, 0, 3);
+        quick_find_union(parents, 12, 0, 4);
+        quick_find_union(parents, 12, 2, 3);
+        quick_find_union(parents, 12, 2, 5);
 
-//        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
-//        quick_union_size_union(parents, 12, sizes, 4, 6);
-//        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
-    }
+        quick_find_union(parents, 12, 6, 7);
+        quick_find_union(parents, 12, 8, 10);
+        quick_find_union(parents, 12, 9, 10);
+        quick_find_union(parents, 12, 9, 11);
 
+        printf("%d\n", quick_find_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_find_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
+        quick_find_union(parents, 12, 4, 6);
+        printf("%d\n", quick_find_is_same(parents, 12, 2, 7));
+    }
+    
     {
-//        int ranks[12];
-//        quick_union_rank_create(parents, 12, ranks);
-//        quick_union_rank_union(parents, 12, ranks, 0, 1);
-//        quick_union_rank_union(parents, 12, ranks, 0, 3);
-//        quick_union_rank_union(parents, 12, ranks, 0, 4);
-//        quick_union_rank_union(parents, 12, ranks, 2, 3);
-//        quick_union_rank_union(parents, 12, ranks, 2, 5);
-//
-//        quick_union_rank_union(parents, 12, ranks, 6, 7);
-//        quick_union_rank_union(parents, 12, ranks, 8, 10);
-//        quick_union_rank_union(parents, 12, ranks, 9, 10);
-//        quick_union_rank_union(parents, 12, ranks, 9, 11);
-//
-//        printf("%d\n", quick_union_rank_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_rank_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_rank_is_same(parents, 12, 2, 7));
-//        quick_union_rank_union(parents, 12, ranks, 4, 6);
-//        printf("%d\n", quick_union_rank_is_same(parents, 12, 2, 7));
+        quick_union_create(parents, 12);
+        quick_union_union(parents, 12, 0, 1);
+        quick_union_union(parents, 12, 0, 3);
+        quick_union_union(parents, 12, 0, 4);
+        quick_union_union(parents, 12, 2, 3);
+        quick_union_union(parents, 12, 2, 5);
+
+        quick_union_union(parents, 12, 6, 7);
+        quick_union_union(parents, 12, 8, 10);
+        quick_union_union(parents, 12, 9, 10);
+        quick_union_union(parents, 12, 9, 11);
+
+        printf("%d\n", quick_union_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
+        quick_union_union(parents, 12, 4, 6);
+        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
+    }
+    
+    {
+        int sizes[12];
+        quick_union_size_create(parents, 12, sizes);
+        quick_union_size_union(parents, 12, sizes, 0, 1);
+        quick_union_size_union(parents, 12, sizes, 0, 3);
+        quick_union_size_union(parents, 12, sizes, 0, 4);
+        quick_union_size_union(parents, 12, sizes, 2, 3);
+        quick_union_size_union(parents, 12, sizes, 2, 5);
+
+        quick_union_size_union(parents, 12, sizes, 6, 7);
+        quick_union_size_union(parents, 12, sizes, 8, 10);
+        quick_union_size_union(parents, 12, sizes, 9, 10);
+        quick_union_size_union(parents, 12, sizes, 9, 11);
+
+        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
+        quick_union_size_union(parents, 12, sizes, 4, 6);
+        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
     }
 
     {
-//        int ranks[12];
-//        quick_union_rank_path_compression_create(parents, 12, ranks);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 1);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 3);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 4);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 2, 3);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 2, 5);
-//
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 6, 7);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 8, 10);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 9, 10);
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 9, 11);
-//
-//        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 2, 7));
-//        quick_union_rank_path_compression_union(parents, 12, ranks, 4, 6);
-//        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 2, 7));
+        int ranks[12];
+        quick_union_rank_create(parents, 12, ranks);
+        quick_union_rank_union(parents, 12, ranks, 0, 1);
+        quick_union_rank_union(parents, 12, ranks, 0, 3);
+        quick_union_rank_union(parents, 12, ranks, 0, 4);
+        quick_union_rank_union(parents, 12, ranks, 2, 3);
+        quick_union_rank_union(parents, 12, ranks, 2, 5);
+
+        quick_union_rank_union(parents, 12, ranks, 6, 7);
+        quick_union_rank_union(parents, 12, ranks, 8, 10);
+        quick_union_rank_union(parents, 12, ranks, 9, 10);
+        quick_union_rank_union(parents, 12, ranks, 9, 11);
+
+        printf("%d\n", quick_union_rank_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_rank_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_rank_is_same(parents, 12, 2, 7));
+        quick_union_rank_union(parents, 12, ranks, 4, 6);
+        printf("%d\n", quick_union_rank_is_same(parents, 12, 2, 7));
     }
 
     {
-//        int ranks[12];
-//        quick_union_rank_path_spliting_create(parents, 12, ranks);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 1);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 3);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 4);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 3);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 5);
-//
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 6, 7);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 8, 10);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 10);
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 11);
-//
-//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
-//        quick_union_rank_path_spliting_union(parents, 12, ranks, 4, 6);
-//        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
+        int ranks[12];
+        quick_union_rank_path_compression_create(parents, 12, ranks);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 1);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 3);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 0, 4);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 2, 3);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 2, 5);
+
+        quick_union_rank_path_compression_union(parents, 12, ranks, 6, 7);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 8, 10);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 9, 10);
+        quick_union_rank_path_compression_union(parents, 12, ranks, 9, 11);
+
+        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 2, 7));
+        quick_union_rank_path_compression_union(parents, 12, ranks, 4, 6);
+        printf("%d\n", quick_union_rank_path_compression_is_same(parents, 12, 2, 7));
     }
 
     {
-//        int ranks[12];
-//        quick_union_rank_path_halving_create(parents, 12, ranks);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 1);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 3);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 4);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 3);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 5);
-//
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 6, 7);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 8, 10);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 10);
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 11);
-//
-//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 6));
-//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 5));
-//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
-//        quick_union_rank_path_halving_union(parents, 12, ranks, 4, 6);
-//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+        int ranks[12];
+        quick_union_rank_path_spliting_create(parents, 12, ranks);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 1);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 3);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 0, 4);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 3);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 2, 5);
+
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 6, 7);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 8, 10);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 10);
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 9, 11);
+
+        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
+        quick_union_rank_path_spliting_union(parents, 12, ranks, 4, 6);
+        printf("%d\n", quick_union_rank_path_spliting_is_same(parents, 12, 2, 7));
     }
+
+    {
+        int ranks[12];
+        quick_union_rank_path_halving_create(parents, 12, ranks);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 1);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 3);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 4);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 3);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 5);
+
+        quick_union_rank_path_halving_union(parents, 12, ranks, 6, 7);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 8, 10);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 10);
+        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 11);
+
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 6));
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+        quick_union_rank_path_halving_union(parents, 12, ranks, 4, 6);
+        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+    }
+#endif
     
     
+#if 0
     {
         #define SIZE (37)
         struct graph* g = create(SIZE);
@@ -303,8 +309,36 @@ int main(int argc, const char * argv[]) {
         
         destroy(g);
     }
-
+#endif
     
+#if 1
+    {
+        if (argc != 3) {
+            fprintf(stderr, "Usage: %s action n\nwhere action =\n  g - print graph\n  d - print dfs tree\n  b - print bfs tree\n", argv[0]);
+            return 1;
+        }
+        
+        int n = atoi(argv[2]);
+        struct _graph* g = make_sample_graph(n);
+        switch (argv[1][0]) {
+            case 'g':
+                print_graph(g);
+                break;
+                case 'd':
+                dfs(g, 0);
+                print_tree(g);
+                break;
+                case 'b':
+                bfs(g, 0);
+                print_tree(g);
+                break;
+            default:
+                fprintf(stderr, "%s: unknown action '%c'\n", argv[0], argv[1][0]);
+                return 1;;
+        }
+        destroy_(g);
+    }
+#endif
     
     return 0;
 }
