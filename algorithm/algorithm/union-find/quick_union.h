@@ -10,5 +10,11 @@
 #define quick_union_h
 
 #include <stdio.h>
+#include "union-find-common.h"
+
+void quick_union_create(int*, int);
+int quick_union_find(int*, int, int);
+void quick_union_union(int*, int, int, int);
+bool quick_union_is_same(int*, int, int, int);
 
 #endif /* quick_union_h */

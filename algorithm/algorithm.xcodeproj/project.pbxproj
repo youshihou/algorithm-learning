@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030067A22470CCF2006727BC /* union-find-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067A12470CCF2006727BC /* union-find-common.c */; };
+		030067AE2470D6CF006727BC /* quick_find.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067AD2470D6CF006727BC /* quick_find.c */; };
+		030067B12470D6DC006727BC /* quick_union.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067B02470D6DC006727BC /* quick_union.c */; };
 		031552E82467B67E001C70B1 /* binary-search.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552E72467B67E001C70B1 /* binary-search.c */; };
 		031552EB2467E526001C70B1 /* merge-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552EA2467E526001C70B1 /* merge-sort.c */; };
 		032936152467024D001314A6 /* insertion-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 032936142467024D001314A6 /* insertion-sort.c */; };
@@ -35,6 +38,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		030067A02470CCF2006727BC /* union-find-common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "union-find-common.h"; sourceTree = "<group>"; };
+		030067A12470CCF2006727BC /* union-find-common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "union-find-common.c"; sourceTree = "<group>"; };
+		030067AC2470D6CF006727BC /* quick_find.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_find.h; sourceTree = "<group>"; };
+		030067AD2470D6CF006727BC /* quick_find.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_find.c; sourceTree = "<group>"; };
+		030067AF2470D6DC006727BC /* quick_union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union.h; sourceTree = "<group>"; };
+		030067B02470D6DC006727BC /* quick_union.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union.c; sourceTree = "<group>"; };
 		031552E62467B67E001C70B1 /* binary-search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "binary-search.h"; sourceTree = "<group>"; };
 		031552E72467B67E001C70B1 /* binary-search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "binary-search.c"; sourceTree = "<group>"; };
 		031552E92467E526001C70B1 /* merge-sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "merge-sort.h"; sourceTree = "<group>"; };
@@ -97,6 +106,19 @@
 			path = cmp;
 			sourceTree = "<group>";
 		};
+		035D220D2470300D0020BF33 /* union-find */ = {
+			isa = PBXGroup;
+			children = (
+				030067A02470CCF2006727BC /* union-find-common.h */,
+				030067A12470CCF2006727BC /* union-find-common.c */,
+				030067AC2470D6CF006727BC /* quick_find.h */,
+				030067AD2470D6CF006727BC /* quick_find.c */,
+				030067AF2470D6DC006727BC /* quick_union.h */,
+				030067B02470D6DC006727BC /* quick_union.c */,
+			);
+			path = "union-find";
+			sourceTree = "<group>";
+		};
 		038C11BC246595B800CB1293 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				038C11CF246595CA00CB1293 /* sort */,
+				035D220D2470300D0020BF33 /* union-find */,
 				038C11C8246595B800CB1293 /* main.c */,
 			);
 			path = algorithm;
@@ -199,9 +222,12 @@
 				038C11D92465A48200CB1293 /* sort-common.c in Sources */,
 				035D21FF246FD7CC0020BF33 /* quick_sort.c in Sources */,
 				035D220C24702BB30020BF33 /* bucket_sort.c in Sources */,
+				030067B12470D6DC006727BC /* quick_union.c in Sources */,
 				031552E82467B67E001C70B1 /* binary-search.c in Sources */,
 				035D22092470202A0020BF33 /* radix_sort.c in Sources */,
+				030067AE2470D6CF006727BC /* quick_find.c in Sources */,
 				031552EB2467E526001C70B1 /* merge-sort.c in Sources */,
+				030067A22470CCF2006727BC /* union-find-common.c in Sources */,
 				032936152467024D001314A6 /* insertion-sort.c in Sources */,
 				038C11C9246595B800CB1293 /* main.c in Sources */,
 				035D220524700A950020BF33 /* counting_sort.c in Sources */,
