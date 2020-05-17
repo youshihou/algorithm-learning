@@ -99,7 +99,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030067C524710157006727BC /* quick_union */ = {
+		030067C524710157006727BC /* quick-union */ = {
 			isa = PBXGroup;
 			children = (
 				030067AF2470D6DC006727BC /* quick_union.h */,
@@ -115,7 +115,7 @@
 				030067C22470FF39006727BC /* quick_union_rank_path_halving.h */,
 				030067C32470FF39006727BC /* quick_union_rank_path_halving.c */,
 			);
-			path = quick_union;
+			path = "quick-union";
 			sourceTree = "<group>";
 		};
 		035D220624700FE00020BF33 /* cmp */ = {
@@ -148,7 +148,7 @@
 				030067A12470CCF2006727BC /* union-find-common.c */,
 				030067AC2470D6CF006727BC /* quick_find.h */,
 				030067AD2470D6CF006727BC /* quick_find.c */,
-				030067C524710157006727BC /* quick_union */,
+				030067C524710157006727BC /* quick-union */,
 			);
 			path = "union-find";
 			sourceTree = "<group>";
