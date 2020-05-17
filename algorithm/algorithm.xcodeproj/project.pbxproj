@@ -12,6 +12,7 @@
 		030067B12470D6DC006727BC /* quick_union.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067B02470D6DC006727BC /* quick_union.c */; };
 		030067B82470E342006727BC /* quick_union_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067B72470E342006727BC /* quick_union_size.c */; };
 		030067BB2470EB55006727BC /* quick_union_rank.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067BA2470EB55006727BC /* quick_union_rank.c */; };
+		030067BE2470F816006727BC /* quick_union_rank_path_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067BD2470F816006727BC /* quick_union_rank_path_compression.c */; };
 		031552E82467B67E001C70B1 /* binary-search.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552E72467B67E001C70B1 /* binary-search.c */; };
 		031552EB2467E526001C70B1 /* merge-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552EA2467E526001C70B1 /* merge-sort.c */; };
 		032936152467024D001314A6 /* insertion-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 032936142467024D001314A6 /* insertion-sort.c */; };
@@ -51,6 +52,8 @@
 		030067B72470E342006727BC /* quick_union_size.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union_size.c; sourceTree = "<group>"; };
 		030067B92470EB55006727BC /* quick_union_rank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union_rank.h; sourceTree = "<group>"; };
 		030067BA2470EB55006727BC /* quick_union_rank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union_rank.c; sourceTree = "<group>"; };
+		030067BC2470F816006727BC /* quick_union_rank_path_compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union_rank_path_compression.h; sourceTree = "<group>"; };
+		030067BD2470F816006727BC /* quick_union_rank_path_compression.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union_rank_path_compression.c; sourceTree = "<group>"; };
 		031552E62467B67E001C70B1 /* binary-search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "binary-search.h"; sourceTree = "<group>"; };
 		031552E72467B67E001C70B1 /* binary-search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "binary-search.c"; sourceTree = "<group>"; };
 		031552E92467E526001C70B1 /* merge-sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "merge-sort.h"; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				030067B72470E342006727BC /* quick_union_size.c */,
 				030067B92470EB55006727BC /* quick_union_rank.h */,
 				030067BA2470EB55006727BC /* quick_union_rank.c */,
+				030067BC2470F816006727BC /* quick_union_rank_path_compression.h */,
+				030067BD2470F816006727BC /* quick_union_rank_path_compression.c */,
 			);
 			path = "union-find";
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				031552EB2467E526001C70B1 /* merge-sort.c in Sources */,
 				030067A22470CCF2006727BC /* union-find-common.c in Sources */,
 				032936152467024D001314A6 /* insertion-sort.c in Sources */,
+				030067BE2470F816006727BC /* quick_union_rank_path_compression.c in Sources */,
 				038C11C9246595B800CB1293 /* main.c in Sources */,
 				035D220524700A950020BF33 /* counting_sort.c in Sources */,
 				038C11DC2465AE6400CB1293 /* heap-sort.c in Sources */,
