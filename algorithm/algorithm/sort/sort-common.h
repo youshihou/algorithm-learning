@@ -9,10 +9,7 @@
 #ifndef sort_common_h
 #define sort_common_h
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
+#include "common.h"
 
 int cmp(int*, int*);
 void swap(int*, int*);

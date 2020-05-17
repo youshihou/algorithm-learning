@@ -44,6 +44,7 @@
 		030067AD2470D6CF006727BC /* quick_find.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_find.c; sourceTree = "<group>"; };
 		030067AF2470D6DC006727BC /* quick_union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union.h; sourceTree = "<group>"; };
 		030067B02470D6DC006727BC /* quick_union.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union.c; sourceTree = "<group>"; };
+		030067B52470D905006727BC /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		031552E62467B67E001C70B1 /* binary-search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "binary-search.h"; sourceTree = "<group>"; };
 		031552E72467B67E001C70B1 /* binary-search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "binary-search.c"; sourceTree = "<group>"; };
 		031552E92467E526001C70B1 /* merge-sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "merge-sort.h"; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 		038C11C7246595B800CB1293 /* algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				030067B52470D905006727BC /* common.h */,
 				038C11CF246595CA00CB1293 /* sort */,
 				035D220D2470300D0020BF33 /* union-find */,
 				038C11C8246595B800CB1293 /* main.c */,
