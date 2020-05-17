@@ -28,6 +28,11 @@
 #include "quick_union_rank_path_spliting.h"
 #include "quick_union_rank_path_halving.h"
 
+#include "graph.h"
+static void match_sink(struct graph* g, int source, int sink, void* data) {
+    assert(data && sink == *((int*)data));
+}
+
 int main(int argc, const char * argv[]) {    
 //    int nums[] = {56, 9, 10, 28, 37, 111, 2};
 //    int size = 7;
@@ -99,7 +104,7 @@ int main(int argc, const char * argv[]) {
     }
     
     
-    int parents[12];
+//    int parents[12];
     
     {
 //        quick_find_create(parents, 12);
@@ -226,25 +231,79 @@ int main(int argc, const char * argv[]) {
     }
 
     {
-        int ranks[12];
-        quick_union_rank_path_halving_create(parents, 12, ranks);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 1);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 3);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 4);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 3);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 5);
-
-        quick_union_rank_path_halving_union(parents, 12, ranks, 6, 7);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 8, 10);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 10);
-        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 11);
-
-        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 6));
-        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 5));
-        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
-        quick_union_rank_path_halving_union(parents, 12, ranks, 4, 6);
-        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+//        int ranks[12];
+//        quick_union_rank_path_halving_create(parents, 12, ranks);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 1);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 3);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 0, 4);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 3);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 2, 5);
+//
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 6, 7);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 8, 10);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 10);
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 9, 11);
+//
+//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 6));
+//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 0, 5));
+//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
+//        quick_union_rank_path_halving_union(parents, 12, ranks, 4, 6);
+//        printf("%d\n", quick_union_rank_path_halving_is_same(parents, 12, 2, 7));
     }
+    
+    
+    {
+        #define SIZE (37)
+        struct graph* g = create(SIZE);
+        assert(vertex_count(g) == SIZE);
+        
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                assert(has_edge(g, i, j) == 0);
+            }
+        }
+        
+        for (int i = 0; i < SIZE; i++) {
+            assert(out_degree(g, i) == 0);
+            foreach(g, i, match_sink, 0);
+        }
+        assert(edge_count(g) == 0);
+        
+        for (int i = 0; i < SIZE; i++) {
+            add_edge(g, i, i);
+        }
+        assert(edge_count(g) == SIZE);
+        
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                assert(has_edge(g, i, j) == (i == j));
+            }
+        }
+        
+        for (int i = 0; i < SIZE; i++) {
+            assert(out_degree(g, i) == 1);
+            foreach(g, i, match_sink, &i);
+        }
+        
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                if (i != j) {
+                    add_edge(g, i, j);
+                }
+            }
+        }
+        assert(edge_count(g) == SIZE * SIZE);
+        
+        for (int i = 0; i < SIZE; i++) {
+            assert(out_degree(g, i) == SIZE);
+            for (int j = 0; j < SIZE; j++) {
+                assert(has_edge(g, i, j) == 1);
+            }
+        }
+        
+        destroy(g);
+    }
+
     
     
     return 0;

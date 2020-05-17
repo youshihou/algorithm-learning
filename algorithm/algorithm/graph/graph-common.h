@@ -9,6 +9,7 @@
 #ifndef graph_common_h
 #define graph_common_h
 
-#include <stdio.h>
+#include "common.h"
+
 
 #endif /* graph_common_h */
