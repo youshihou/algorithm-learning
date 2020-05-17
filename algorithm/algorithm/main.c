@@ -22,6 +22,7 @@
 
 #include "quick_find.h"
 #include "quick_union.h"
+#include "quick_union_size.h"
 
 int main(int argc, const char * argv[]) {    
 //    int nums[] = {56, 9, 10, 28, 37, 111, 2};
@@ -94,24 +95,46 @@ int main(int argc, const char * argv[]) {
     }
     
     {
-        quick_union_create(parents, 12);
-        quick_union_union(parents, 12, 0, 1);
-        quick_union_union(parents, 12, 0, 3);
-        quick_union_union(parents, 12, 0, 4);
-        quick_union_union(parents, 12, 2, 3);
-        quick_union_union(parents, 12, 2, 5);
-
-        quick_union_union(parents, 12, 6, 7);
-        quick_union_union(parents, 12, 8, 10);
-        quick_union_union(parents, 12, 9, 10);
-        quick_union_union(parents, 12, 9, 11);
-
+//        quick_union_create(parents, 12);
+//        quick_union_union(parents, 12, 0, 1);
+//        quick_union_union(parents, 12, 0, 3);
+//        quick_union_union(parents, 12, 0, 4);
+//        quick_union_union(parents, 12, 2, 3);
+//        quick_union_union(parents, 12, 2, 5);
+//
+//        quick_union_union(parents, 12, 6, 7);
+//        quick_union_union(parents, 12, 8, 10);
+//        quick_union_union(parents, 12, 9, 10);
+//        quick_union_union(parents, 12, 9, 11);
+//
 //        printf("%d\n", quick_union_is_same(parents, 12, 0, 6));
 //        printf("%d\n", quick_union_is_same(parents, 12, 0, 5));
-        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
-        quick_union_union(parents, 12, 4, 6);
-        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
+//        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
+//        quick_union_union(parents, 12, 4, 6);
+//        printf("%d\n", quick_union_is_same(parents, 12, 2, 7));
     }
+    
+    {
+        int sizes[12];
+        quick_union_size_create(parents, 12, sizes);
+        quick_union_size_union(parents, 12, sizes, 0, 1);
+        quick_union_size_union(parents, 12, sizes, 0, 3);
+        quick_union_size_union(parents, 12, sizes, 0, 4);
+        quick_union_size_union(parents, 12, sizes, 2, 3);
+        quick_union_size_union(parents, 12, sizes, 2, 5);
+
+        quick_union_size_union(parents, 12, sizes, 6, 7);
+        quick_union_size_union(parents, 12, sizes, 8, 10);
+        quick_union_size_union(parents, 12, sizes, 9, 10);
+        quick_union_size_union(parents, 12, sizes, 9, 11);
+
+//        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 6));
+//        printf("%d\n", quick_union_size_is_same(parents, 12, 0, 5));
+        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
+        quick_union_size_union(parents, 12, sizes, 4, 6);
+        printf("%d\n", quick_union_size_is_same(parents, 12, 2, 7));
+    }
+
 
     
     return 0;

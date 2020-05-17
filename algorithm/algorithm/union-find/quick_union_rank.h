@@ -9,6 +9,7 @@
 #ifndef quick_union_rank_h
 #define quick_union_rank_h
 
-#include <stdio.h>
+#include "union-find-common.h"
+
 
 #endif /* quick_union_rank_h */
