@@ -99,6 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030067C524710157006727BC /* quick_union */ = {
+			isa = PBXGroup;
+			children = (
+				030067AF2470D6DC006727BC /* quick_union.h */,
+				030067B02470D6DC006727BC /* quick_union.c */,
+				030067B62470E342006727BC /* quick_union_size.h */,
+				030067B72470E342006727BC /* quick_union_size.c */,
+				030067B92470EB55006727BC /* quick_union_rank.h */,
+				030067BA2470EB55006727BC /* quick_union_rank.c */,
+				030067BC2470F816006727BC /* quick_union_rank_path_compression.h */,
+				030067BD2470F816006727BC /* quick_union_rank_path_compression.c */,
+				030067BF2470FC85006727BC /* quick_union_rank_path_spliting.h */,
+				030067C02470FC85006727BC /* quick_union_rank_path_spliting.c */,
+				030067C22470FF39006727BC /* quick_union_rank_path_halving.h */,
+				030067C32470FF39006727BC /* quick_union_rank_path_halving.c */,
+			);
+			path = quick_union;
+			sourceTree = "<group>";
+		};
 		035D220624700FE00020BF33 /* cmp */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,18 +148,7 @@
 				030067A12470CCF2006727BC /* union-find-common.c */,
 				030067AC2470D6CF006727BC /* quick_find.h */,
 				030067AD2470D6CF006727BC /* quick_find.c */,
-				030067AF2470D6DC006727BC /* quick_union.h */,
-				030067B02470D6DC006727BC /* quick_union.c */,
-				030067B62470E342006727BC /* quick_union_size.h */,
-				030067B72470E342006727BC /* quick_union_size.c */,
-				030067B92470EB55006727BC /* quick_union_rank.h */,
-				030067BA2470EB55006727BC /* quick_union_rank.c */,
-				030067BC2470F816006727BC /* quick_union_rank_path_compression.h */,
-				030067BD2470F816006727BC /* quick_union_rank_path_compression.c */,
-				030067BF2470FC85006727BC /* quick_union_rank_path_spliting.h */,
-				030067C02470FC85006727BC /* quick_union_rank_path_spliting.c */,
-				030067C22470FF39006727BC /* quick_union_rank_path_halving.h */,
-				030067C32470FF39006727BC /* quick_union_rank_path_halving.c */,
+				030067C524710157006727BC /* quick_union */,
 			);
 			path = "union-find";
 			sourceTree = "<group>";
