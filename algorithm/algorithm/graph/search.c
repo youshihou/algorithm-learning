@@ -8,7 +8,6 @@
 
 #include "search.h"
 
-//typedef int Vertex;
 
 #define VERTEX_NULL (-1)
 

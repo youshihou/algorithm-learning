@@ -311,7 +311,7 @@ int main(int argc, const char * argv[]) {
     }
 #endif
     
-#if 1
+#if 0
     {
         if (argc != 3) {
             fprintf(stderr, "Usage: %s action n\nwhere action =\n  g - print graph\n  d - print dfs tree\n  b - print bfs tree\n", argv[0]);
