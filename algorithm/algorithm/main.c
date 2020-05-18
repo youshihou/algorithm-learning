@@ -28,10 +28,12 @@
 #include "quick_union_rank_path_spliting.h"
 #include "quick_union_rank_path_halving.h"
 
+#if 0
 #include "graph.h"
 static void match_sink(struct graph* g, int source, int sink, void* data) {
     assert(data && sink == *((int*)data));
 }
+#endif
 
 #include "search.h"
 
