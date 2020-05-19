@@ -8,9 +8,7 @@
 
 #include "search.h"
 
-
 #define VERTEX_NULL (-1)
-
 
 void destroy_(struct _graph* g) {
     for (int i = 0; i < g->vertices; i++) {
