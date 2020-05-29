@@ -9,7 +9,7 @@
 #ifndef quick_union_h
 #define quick_union_h
 
-#include "union-find-common.h"
+#include "common.h"
 
 void quick_union_create(int*, int);
 int quick_union_find(int*, int, int);

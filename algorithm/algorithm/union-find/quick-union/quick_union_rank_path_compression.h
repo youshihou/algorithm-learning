@@ -9,7 +9,7 @@
 #ifndef quick_union_rank_path_compression_h
 #define quick_union_rank_path_compression_h
 
-#include "union-find-common.h"
+#include "common.h"
 
 void quick_union_rank_path_compression_create(int*, int, int*);
 void quick_union_rank_path_compression_union(int*, int, int*, int, int);

@@ -9,7 +9,7 @@
 #ifndef graph_h
 #define graph_h
 
-#include <stdio.h>
+#include "common.h"
 
 struct successors {
     int d;

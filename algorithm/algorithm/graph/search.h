@@ -9,7 +9,7 @@
 #ifndef search_h
 #define search_h
 
-#include "graph-common.h"
+#include "common.h"
 
 struct node {
     int parent;

@@ -9,7 +9,7 @@
 #ifndef quick_union_rank_path_halving_h
 #define quick_union_rank_path_halving_h
 
-#include "union-find-common.h"
+#include "common.h"
 
 void quick_union_rank_path_halving_create(int*, int, int*);
 void quick_union_rank_path_halving_union(int*, int, int*, int, int);

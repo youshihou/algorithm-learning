@@ -9,7 +9,6 @@
 #ifndef generic_search_h
 #define generic_search_h
 
-#include "graph-common.h"
 #include "graph.h"
 
 struct info {

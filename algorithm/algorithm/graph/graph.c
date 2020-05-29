@@ -7,7 +7,6 @@
 //
 
 #include "graph.h"
-#include "graph-common.h"
 
 struct graph* create(int n) {
     struct graph* g = malloc(sizeof(struct graph) + sizeof(struct successors *) * n);

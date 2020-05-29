@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030067A22470CCF2006727BC /* union-find-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067A12470CCF2006727BC /* union-find-common.c */; };
 		030067AE2470D6CF006727BC /* quick_find.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067AD2470D6CF006727BC /* quick_find.c */; };
 		030067B12470D6DC006727BC /* quick_union.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067B02470D6DC006727BC /* quick_union.c */; };
 		030067B82470E342006727BC /* quick_union_size.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067B72470E342006727BC /* quick_union_size.c */; };
@@ -15,7 +14,6 @@
 		030067BE2470F816006727BC /* quick_union_rank_path_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067BD2470F816006727BC /* quick_union_rank_path_compression.c */; };
 		030067C12470FC85006727BC /* quick_union_rank_path_spliting.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067C02470FC85006727BC /* quick_union_rank_path_spliting.c */; };
 		030067C42470FF39006727BC /* quick_union_rank_path_halving.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067C32470FF39006727BC /* quick_union_rank_path_halving.c */; };
-		030067CC24710C12006727BC /* graph-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067CB24710C12006727BC /* graph-common.c */; };
 		030067CF24713481006727BC /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067CE24713481006727BC /* graph.c */; };
 		030067D224717457006727BC /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = 030067D124717457006727BC /* search.c */; };
 		031552E82467B67E001C70B1 /* binary-search.c in Sources */ = {isa = PBXBuildFile; fileRef = 031552E72467B67E001C70B1 /* binary-search.c */; };
@@ -26,6 +24,7 @@
 		035D220524700A950020BF33 /* counting_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D220424700A950020BF33 /* counting_sort.c */; };
 		035D22092470202A0020BF33 /* radix_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D22082470202A0020BF33 /* radix_sort.c */; };
 		035D220C24702BB30020BF33 /* bucket_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D220B24702BB30020BF33 /* bucket_sort.c */; };
+		036B30C4248134060019363A /* skip_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 036B30C3248134060019363A /* skip_list.c */; };
 		037429FF2472B42200C7BFBF /* generic_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 037429FE2472B42200C7BFBF /* generic_search.c */; };
 		038C11C9246595B800CB1293 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11C8246595B800CB1293 /* main.c */; };
 		038C11D3246595CA00CB1293 /* bubble-sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 038C11D2246595CA00CB1293 /* bubble-sort.c */; };
@@ -47,8 +46,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		030067A02470CCF2006727BC /* union-find-common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "union-find-common.h"; sourceTree = "<group>"; };
-		030067A12470CCF2006727BC /* union-find-common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "union-find-common.c"; sourceTree = "<group>"; };
 		030067AC2470D6CF006727BC /* quick_find.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_find.h; sourceTree = "<group>"; };
 		030067AD2470D6CF006727BC /* quick_find.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_find.c; sourceTree = "<group>"; };
 		030067AF2470D6DC006727BC /* quick_union.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union.h; sourceTree = "<group>"; };
@@ -64,8 +61,6 @@
 		030067C02470FC85006727BC /* quick_union_rank_path_spliting.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union_rank_path_spliting.c; sourceTree = "<group>"; };
 		030067C22470FF39006727BC /* quick_union_rank_path_halving.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quick_union_rank_path_halving.h; sourceTree = "<group>"; };
 		030067C32470FF39006727BC /* quick_union_rank_path_halving.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = quick_union_rank_path_halving.c; sourceTree = "<group>"; };
-		030067CA24710C12006727BC /* graph-common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "graph-common.h"; sourceTree = "<group>"; };
-		030067CB24710C12006727BC /* graph-common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "graph-common.c"; sourceTree = "<group>"; };
 		030067CD24713481006727BC /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		030067CE24713481006727BC /* graph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
 		030067D024717457006727BC /* search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
@@ -86,6 +81,8 @@
 		035D22082470202A0020BF33 /* radix_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = radix_sort.c; sourceTree = "<group>"; };
 		035D220A24702BB30020BF33 /* bucket_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bucket_sort.h; sourceTree = "<group>"; };
 		035D220B24702BB30020BF33 /* bucket_sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bucket_sort.c; sourceTree = "<group>"; };
+		036B30C2248134060019363A /* skip_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skip_list.h; sourceTree = "<group>"; };
+		036B30C3248134060019363A /* skip_list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = skip_list.c; sourceTree = "<group>"; };
 		037429FD2472B42200C7BFBF /* generic_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = generic_search.h; sourceTree = "<group>"; };
 		037429FE2472B42200C7BFBF /* generic_search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = generic_search.c; sourceTree = "<group>"; };
 		038C11C5246595B800CB1293 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,8 +130,6 @@
 		030067C924710BEA006727BC /* graph */ = {
 			isa = PBXGroup;
 			children = (
-				030067CA24710C12006727BC /* graph-common.h */,
-				030067CB24710C12006727BC /* graph-common.c */,
 				030067CD24713481006727BC /* graph.h */,
 				030067CE24713481006727BC /* graph.c */,
 				030067D024717457006727BC /* search.h */,
@@ -171,8 +166,6 @@
 		035D220D2470300D0020BF33 /* union-find */ = {
 			isa = PBXGroup;
 			children = (
-				030067A02470CCF2006727BC /* union-find-common.h */,
-				030067A12470CCF2006727BC /* union-find-common.c */,
 				030067AC2470D6CF006727BC /* quick_find.h */,
 				030067AD2470D6CF006727BC /* quick_find.c */,
 				030067C524710157006727BC /* quick-union */,
@@ -203,6 +196,7 @@
 				038C11CF246595CA00CB1293 /* sort */,
 				035D220D2470300D0020BF33 /* union-find */,
 				030067C924710BEA006727BC /* graph */,
+				03D1F35C247FF93B00920593 /* skip-list */,
 				038C11C8246595B800CB1293 /* main.c */,
 			);
 			path = algorithm;
@@ -222,6 +216,15 @@
 				035D220B24702BB30020BF33 /* bucket_sort.c */,
 			);
 			path = sort;
+			sourceTree = "<group>";
+		};
+		03D1F35C247FF93B00920593 /* skip-list */ = {
+			isa = PBXGroup;
+			children = (
+				036B30C2248134060019363A /* skip_list.h */,
+				036B30C3248134060019363A /* skip_list.c */,
+			);
+			path = "skip-list";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +253,7 @@
 		038C11BD246595B800CB1293 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Ankui;
 				TargetAttributes = {
 					038C11C4246595B800CB1293 = {
@@ -283,11 +286,11 @@
 			files = (
 				035D2202246FE9790020BF33 /* shell_sort.c in Sources */,
 				030067C42470FF39006727BC /* quick_union_rank_path_halving.c in Sources */,
+				036B30C4248134060019363A /* skip_list.c in Sources */,
 				038C11D92465A48200CB1293 /* sort-common.c in Sources */,
 				035D21FF246FD7CC0020BF33 /* quick_sort.c in Sources */,
 				035D220C24702BB30020BF33 /* bucket_sort.c in Sources */,
 				030067CF24713481006727BC /* graph.c in Sources */,
-				030067CC24710C12006727BC /* graph-common.c in Sources */,
 				030067C12470FC85006727BC /* quick_union_rank_path_spliting.c in Sources */,
 				030067B12470D6DC006727BC /* quick_union.c in Sources */,
 				031552E82467B67E001C70B1 /* binary-search.c in Sources */,
@@ -298,7 +301,6 @@
 				031552EB2467E526001C70B1 /* merge-sort.c in Sources */,
 				030067D224717457006727BC /* search.c in Sources */,
 				037429FF2472B42200C7BFBF /* generic_search.c in Sources */,
-				030067A22470CCF2006727BC /* union-find-common.c in Sources */,
 				032936152467024D001314A6 /* insertion-sort.c in Sources */,
 				030067BE2470F816006727BC /* quick_union_rank_path_compression.c in Sources */,
 				038C11C9246595B800CB1293 /* main.c in Sources */,
@@ -424,6 +426,7 @@
 		038C11CD246595B800CB1293 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -432,6 +435,7 @@
 		038C11CE246595B800CB1293 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
