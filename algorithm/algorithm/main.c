@@ -37,6 +37,8 @@ static void match_sink(struct graph* g, int source, int sink, void* data) {
 
 #include "search.h"
 
+#include "skip_list.h"
+
 int main(int argc, const char * argv[]) {
     
 #if 0
@@ -339,6 +341,60 @@ int main(int argc, const char * argv[]) {
                 return 1;;
         }
         destroy_(g);
+    }
+#endif
+    
+#if 1
+    {
+        if (argc != 2) {
+            fprintf(stderr, "Usage: %s number-od-elements\n", argv[0]);
+            return 1;
+        }
+        
+        int n = atoi(argv[1]);
+//        int n = 10;
+        Skiplist s = skiplist_create();
+        
+        for (int i = 0; i < n; i += 2) {
+            skiplist_insert(s, i);
+        }
+        
+        assert(skiplist_search(s, -1) == INT_MIN);
+        
+        for (int i = 0; i < n; i += 2) {
+            assert(skiplist_search(s, i) == i);
+            assert(skiplist_search(s, i + 1) == i);
+        }
+        
+        
+        for (int i = 0; i < n; i += 4) {
+            skiplist_delete(s, i);
+        }
+        
+        assert(skiplist_search(s, 0) == INT_MIN);
+        
+        for (int i = 2; i < n; i += 4) {
+            assert(skiplist_search(s, i) == i);
+            assert(skiplist_search(s, i + 1) == i);
+            assert(skiplist_search(s, i + 2) == i);
+            assert(skiplist_search(s, i + 3) == i);
+        }
+        
+        for (int i = 0; i < n; i++) {
+            skiplist_insert(s, 0);
+            assert(skiplist_search(s, 0) == 0);
+            assert(skiplist_search(s, 1) == 0);
+        }
+        
+        for (int i = 0; i < n; i++) {
+            assert(skiplist_search(s, 0) == 0);
+            assert(skiplist_search(s, 1) == 0);
+            skiplist_delete(s, 0);
+        }
+        
+        assert(skiplist_search(s, 0) == INT_MIN);
+        
+        skiplist_destroy(s);
     }
 #endif
     

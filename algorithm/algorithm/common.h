@@ -15,5 +15,6 @@
 #include <string.h>
 #include <assert.h>
 #include <stdint.h>
+#include <limits.h>
 
 #endif /* common_h */

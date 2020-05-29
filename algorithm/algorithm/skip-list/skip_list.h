@@ -11,4 +11,13 @@
 
 #include <stdio.h>
 
+typedef struct skiplist* Skiplist;
+
+Skiplist skiplist_create(void);
+void skiplist_destroy(Skiplist);
+int skiplist_search(Skiplist, int);
+void skiplist_insert(Skiplist, int);
+void skiplist_delete(Skiplist, int);
+
+
 #endif /* skip_list_h */
