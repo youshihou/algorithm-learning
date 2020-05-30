@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int kmp(char*, char*);
+
 #endif /* kmp_h */
