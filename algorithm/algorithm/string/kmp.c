@@ -9,6 +9,7 @@
 #include "kmp.h"
 #include "common.h"
 
+
 static int* next_list(char* pattern) {
     size_t len = strlen(pattern);
     int* next = malloc(sizeof(int) * len);
@@ -19,7 +20,13 @@ static int* next_list(char* pattern) {
     size_t iMax = len - 1;
     while (i < iMax) {
         if (n < 0 || pattern[i] == pattern[n]) {
-            next[++i] = ++n;
+            ++i;
+            ++n;
+            if (pattern[i] == pattern[n]) {
+                next[i] = next[n];
+            } else {
+                next[i] = n;
+            }
         } else {
             n = next[n];
         }
@@ -27,6 +34,25 @@ static int* next_list(char* pattern) {
     
     return next;
 }
+
+//static int* next_list(char* pattern) {
+//    size_t len = strlen(pattern);
+//    int* next = malloc(sizeof(int) * len);
+//    next[0] = -1;
+//    
+//    int i = 0;
+//    int n = -1;
+//    size_t iMax = len - 1;
+//    while (i < iMax) {
+//        if (n < 0 || pattern[i] == pattern[n]) {
+//            next[++i] = ++n;
+//        } else {
+//            n = next[n];
+//        }
+//    }
+//
+//    return next;
+//}
 
 int kmp(char* text, char* pattern) {
     if (text == NULL || pattern == NULL) { return -1; }
