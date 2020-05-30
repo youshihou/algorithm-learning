@@ -39,6 +39,8 @@ static void match_sink(struct graph* g, int source, int sink, void* data) {
 
 #include "skip_list.h"
 
+#include "brute_force.h"
+
 int main(int argc, const char * argv[]) {
     
 #if 0
@@ -344,7 +346,7 @@ int main(int argc, const char * argv[]) {
     }
 #endif
     
-#if 1
+#if 0
     {
         if (argc != 2) {
             fprintf(stderr, "Usage: %s number-od-elements\n", argv[0]);
@@ -397,6 +399,18 @@ int main(int argc, const char * argv[]) {
         skiplist_destroy(s);
     }
 #endif
+    
+#if 1
+    {
+        char* text = "Hello World";
+        assert(brute_force(text, "H") == 0);
+        assert(brute_force(text, "d") == 10);
+        assert(brute_force(text, "or") == 7);
+        assert(brute_force(text, "abc") == -1);
+    }
+#endif
+    
+    
     
     return 0;
 }

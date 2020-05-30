@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int brute_force(char*, char*);
+
 #endif /* brute_force_h */
