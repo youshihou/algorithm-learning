@@ -9,7 +9,31 @@
 #include "brute_force.h"
 #include "common.h"
 
+
 int brute_force(char* text, char* pattern) {
+    if (text == NULL || pattern == NULL) { return -1; }
+    size_t tlen = strlen(text);
+    if (tlen == 0) { return -1; }
+    size_t plen = strlen(pattern);
+    if (plen == 0) { return -1; }
+    if (tlen < plen) { return -1; }
+    
+    size_t tiMax = tlen - plen;
+    for (int ti = 0; ti <= tiMax; ti++) {
+        int pi = 0;
+        for (; pi < plen; pi++) {
+            if (text[ti + pi] != pattern[pi]) { break; }
+        }
+        
+        if (plen == pi) { return ti; }
+    }
+    
+    return -1;
+}
+
+
+
+int brute_force2(char* text, char* pattern) {
     if (text == NULL || pattern == NULL) { return -1; }
     size_t tlen = strlen(text);
     if (tlen == 0) { return -1; }
@@ -55,5 +79,5 @@ int brute_force1(char* text, char* pattern) {
         }
     }
     
-    return (plen == pi) ? (ti - pi) : -1;
+    return (plen == pi) ? (ti - pi) : -1; // CARE!!! plen == pi
 }
